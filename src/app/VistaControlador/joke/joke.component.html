@@ -1,6 +1,6 @@
 <div (dblclick)="eliminarBroma(bromaHijo)" class="container p-5 my-5 border">
   <h2>{{ bromaHijo.getPregunta() | pipeInadecuadas:'cheese,cheddar' }}</h2>
-  <p [hidden]="bromaHijo.isEscondido()">{{ bromaHijo.getRespuesta() | pipeInadecuadas:'Halloumi,Mascarpone,mature' }}</p>
+  <p [hidden]="bromaHijo.isEscondido()">{{ bromaHijo.getRespuesta() | pipeInadecuadas:'halloumi,mascarpone,mature' }}</p>
   <button class="btn btn-outline-info" (click)="bromaHijo.setEscondido()">Mostrar</button>&nbsp;&nbsp;&nbsp;
   <button class="btn btn-outline-danger" (click)="eliminarBroma(bromaHijo)">Eliminar</button>
 </div>

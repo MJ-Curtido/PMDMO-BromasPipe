@@ -16,7 +16,7 @@ export class PipeInadecuadasPipe implements PipeTransform {
         palabraCensurada += "*";
       }
 
-      value = value.replace(palabra, palabraCensurada) //he intentado poner /palabra/gi para que sea ignore case pero no me deja
+      value = value.replace(new RegExp(palabra, "i"), palabraCensurada)
     });
 
     return value;
