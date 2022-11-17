@@ -7,10 +7,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class PipeInadecuadasPipe implements PipeTransform {
 
   transform(value: String, palabrasInadecuadas: String): String {
-    palabrasInadecuadas = palabrasInadecuadas.replace(/\s/g, '');;
-
-    console.log(palabrasInadecuadas);
-
     let listaPalabras = palabrasInadecuadas.split(',');
 
     listaPalabras.forEach(palabra => {
